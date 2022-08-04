@@ -19,6 +19,11 @@
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
+
+    & {
+      margin-top: 20px;
+      margin-bottom: 9px;
+    }
   }
   
   .footer-logo {
@@ -31,11 +36,6 @@
     letter-spacing: 0.03em;
   }
   
-  .footer-address {
-    margin-top: 20px;
-    margin-bottom: 9px;
-  }
-  
   .footer-contacts {
     margin-right: 70px;
   }
@@ -46,12 +46,13 @@
   
   .footer-contacts-link {
     color: rgba(255, 255, 255, 0.6);
+
+    &:hover,
+    &:focus {
+    color: var(--accent-color);
+   }
   }
   
-  .footer-contacts-link:hover,
-  .footer-contacts-link:focus {
-    color: var(--accent-color);
-  }
   
   /* Приєднуйтесь */
   .join-networks {
@@ -69,13 +70,14 @@
   .join .social-link {
     background-color: rgba(255, 255, 255, 0.1);
     color: var(--background-color);
+
+    &:hover,
+    &:focus {
+    background-color: var(--accent-color);
+  }
   }
   
   .join .social-icon {
     fill: currentColor;
   }
   
-  .join .social-link:hover,
-  .join .social-link:focus {
-    background-color: var(--accent-color);
-  }
