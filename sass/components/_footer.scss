@@ -4,9 +4,20 @@
     padding-top: 60px;
   }
   
-  .footer-items {
-    display: flex;
-    align-items: baseline;
+  .container.footer-container {
+    @media (max-width: 767px){
+      text-align: center;
+    }
+
+    @media (min-width: $tablet){
+      display: flex;
+      justify-content: space-around;
+    }
+
+    @media (min-width: $desktop){
+       display: flex;
+       align-items: baseline;
+    }
   }
   
   .footer,
@@ -37,7 +48,14 @@
   }
   
   .footer-contacts {
-    margin-right: 70px;
+    @media (max-width: 767px){
+      margin-bottom: 60px;
+    }
+    
+    @media (min-width: $desktop){
+     margin-right: 70px;
+    }
+    
   }
 
   .link-footer{

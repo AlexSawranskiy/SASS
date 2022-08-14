@@ -11,14 +11,14 @@
   }
   
   .features {
-    
-    @media (min-width: $desktop){
+    @media (min-width: $tablet){
       display: flex;
-      justify-content: space-between;
+      flex-wrap: wrap;
+      margin: -15px;
     }
 
     @media (min-width: $desktop){
-      margin:-15px;
+     justify-content: space-between;
     }
   }
   
@@ -26,17 +26,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 270px;
     height: 120px;
     margin-bottom: 30px;
     background-color: var(--background-button);
   }
   
   .features-item {
-    width: 100%;
-    
-    @media (min-width:$tablet){
-      width: calc((100% - 4 * 15px) /2)
+    @media (min-width: $tablet){
+      width: calc((100% - 4 * 15px) /2);
       margin: 15px;
       // width: 354px;
     }
@@ -55,6 +52,9 @@
   /*Секція Чим ми займаємось*/
   .section.work {
     padding-top: 0;
+    @media (max-width: 1199px){
+      display: none;
+    }
   }
   
   .image {
