@@ -2,7 +2,11 @@
 @import "./variabels/breackpoints";
 @import "./utils/utils";
 @import "./components/common";
-@import "./components/header";
+@import "./components/header/header-contacts";
+@import "./components/header/logo";
+@import "./components/header/navigation";
+@import "./components/header/mobile-menu";
+@import "./components/header/header-networks";
 @import "./components/hero";
 @import "./components/modal";
 @import "./components/form";
